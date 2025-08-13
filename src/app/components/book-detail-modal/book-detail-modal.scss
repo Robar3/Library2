@@ -1,0 +1,151 @@
+.dialog-container {
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  position: relative;
+  background: white;
+  z-index: 2;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.modal-title {
+  color: #3f51b5;
+  margin: 0;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 50px);
+}
+
+.close-button {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3f51b5;
+  color: white;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+
+  &:hover {
+    background-color: #303f9f;
+    transform: scale(1.1);
+  }
+
+  .mat-icon {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+  }
+}
+
+.modal-title {
+  margin-right: 40px;
+}
+
+.modal-content {
+  padding: 16px 24px;
+  overflow-y: auto;
+  flex: 1;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #3f51b5;
+    border-radius: 3px;
+  }
+}
+
+.content-wrapper {
+  display: flex;
+  gap: 24px;
+  min-height: min-content;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
+.book-cover {
+  flex-shrink: 0;
+  width: 120px;
+  height: 170px;
+  background: linear-gradient(145deg, #3f51b5, #673ab7);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+  @media (max-width: 600px) {
+    width: 100px;
+    height: 140px;
+    margin: 0 auto;
+  }
+
+  .cover-icon {
+    color: white;
+    font-size: 60px;
+    width: 60px;
+    height: 60px;
+
+    @media (max-width: 600px) {
+      font-size: 50px;
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+.book-details {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.detail-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  .detail-icon {
+    color: #3f51b5;
+    flex-shrink: 0;
+  }
+
+  .detail-label {
+    font-weight: 500;
+    min-width: 100px;
+    color: #555;
+    flex-shrink: 0;
+
+    @media (max-width: 400px) {
+      min-width: 80px;
+    }
+  }
+
+  .detail-value {
+    color: #333;
+    word-break: break-word;
+  }
+}

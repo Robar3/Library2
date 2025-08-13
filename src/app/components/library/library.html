@@ -1,0 +1,42 @@
+<mat-toolbar color="primary">
+  <span>Библиотека</span>
+  <span class="spacer"></span>
+  <button mat-raised-button (click)="openAddBookModal()">Добавить книгу</button>
+</mat-toolbar>
+
+<div class="container">
+  <div class="filter-section">
+    <div class="search-row">
+      <mat-form-field appearance="fill" class="search-field">
+        <mat-label>Поиск книг</mat-label>
+        <input matInput
+               [ngModel]="filterText"
+               (ngModelChange)="onFilterChange($event)"
+               placeholder="Введите текст для поиска">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="search-type-field">
+        <mat-label>Тип поиска</mat-label>
+        <mat-select [(ngModel)]="searchType" (selectionChange)="onSearchTypeChange()">
+          <mat-option value="both">По названию и автору</mat-option>
+          <mat-option value="title">По названию</mat-option>
+          <mat-option value="author">По автору</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+
+  <mat-list>
+    @for (book of filteredBooks; track book.id){
+      <mat-list-item
+        (click)="openBookDetails(book)"
+        class="book-item"
+        matRipple
+      >
+        <span mat-line>{{book.title}}</span>
+        <span mat-line class="author">{{book.author}}</span>
+      </mat-list-item>
+    }
+  </mat-list>
+</div>
+

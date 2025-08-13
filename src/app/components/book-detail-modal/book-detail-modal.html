@@ -1,0 +1,42 @@
+<div class="dialog-container">
+  <div class="modal-header">
+    <h2 class="modal-title">{{book.title}}</h2>
+    <button mat-icon-button class="close-button" mat-dialog-close aria-label="Закрыть">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+
+  <mat-dialog-content class="modal-content">
+    <div class="content-wrapper">
+      <div class="book-cover">
+        <mat-icon class="cover-icon">menu_book</mat-icon>
+      </div>
+
+      <div class="book-details">
+        <div class="detail-row">
+          <mat-icon class="detail-icon">person</mat-icon>
+          <span class="detail-label">Автор:</span>
+          <span class="detail-value">{{book.author}}</span>
+        </div>
+
+        <div class="detail-row">
+          <mat-icon class="detail-icon">description</mat-icon>
+          <span class="detail-label">Страниц:</span>
+          <span class="detail-value">{{book.pages}}</span>
+        </div>
+
+        <div class="detail-row">
+          <mat-icon class="detail-icon">event</mat-icon>
+          <span class="detail-label">Дата выхода:</span>
+          <span class="detail-value">{{book.releaseDate | date:'longDate'}}</span>
+        </div>
+
+        <div class="detail-row">
+          <mat-icon class="detail-icon">category</mat-icon>
+          <span class="detail-label">Жанр:</span>
+          <span class="detail-value">{{book.genre}}</span>
+        </div>
+      </div>
+    </div>
+  </mat-dialog-content>
+</div>

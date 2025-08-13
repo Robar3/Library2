@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "pages": 1178,
+    "releaseDate": "1954-07-29T00:00:00.000Z",
+    "genre": "Fantasy"
+  },
+  {
+    "id": 2,
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "pages": 412,
+    "releaseDate": "1965-08-01T00:00:00.000Z",
+    "genre": "Science-fiction"
+  },
+  {
+    "id": 3,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "pages": 279,
+    "releaseDate": "1813-01-28T00:00:00.000Z",
+    "genre": "Romance"
+  },
+  {
+    "id": 4,
+    "title": "The Da Vinci Code",
+    "author": "Dan Brown",
+    "pages": 454,
+    "releaseDate": "2003-03-18T00:00:00.000Z",
+    "genre": "Thriller / Mystery"
+  },
+  {
+    "id": 5,
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "pages": 310,
+    "releaseDate": "1937-09-21T00:00:00.000Z",
+    "genre": "Fantasy"
+  },
+  {
+    "id": 6,
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "pages": 319,
+    "releaseDate": "2018-10-16T00:00:00.000Z",
+    "genre": "Non-fiction"
+  },
+  {
+    "id": 7,
+    "title": "The Girl with the Dragon Tattoo",
+    "author": "Stieg Larsson",
+    "pages": 465,
+    "releaseDate": "2005-08-01T00:00:00.000Z",
+    "genre": "Thriller / Mystery"
+  },
+  {
+    "id": 8,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "pages": 197,
+    "releaseDate": "1988-01-01T00:00:00.000Z",
+    "genre": "Fiction"
+  },
+  {
+    "id": 9,
+    "title": "Harry Potter and the Philosopher's Stone",
+    "author": "J.K. Rowling",
+    "pages": 223,
+    "releaseDate": "1997-06-26T00:00:00.000Z",
+    "genre": "Series"
+  },
+  {
+    "id": 10,
+    "title": "The Shining",
+    "author": "Stephen King",
+    "pages": 447,
+    "releaseDate": "1977-01-28T00:00:00.000Z",
+    "genre": "Horror"
+  },
+  {
+    "id": 11,
+    "title": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
+    "pages": 443,
+    "releaseDate": "2011-02-10T00:00:00.000Z",
+    "genre": "History"
+  },
+  {
+    "id": 12,
+    "title": "The Hitchhiker's Guide to the Galaxy",
+    "author": "Douglas Adams",
+    "pages": 193,
+    "releaseDate": "1979-10-12T00:00:00.000Z",
+    "genre": "Satire"
+  },
+  {
+    "id": 13,
+    "title": "The Very Hungry Caterpillar",
+    "author": "Eric Carle",
+    "pages": 22,
+    "releaseDate": "1969-06-03T00:00:00.000Z",
+    "genre": "Children’s books"
+  },
+  {
+    "id": 14,
+    "title": "Mastering the Art of French Cooking",
+    "author": "Julia Child",
+    "pages": 684,
+    "releaseDate": "1961-10-01T00:00:00.000Z",
+    "genre": "Cook-books"
+  },
+  {
+    "id": 15,
+    "title": "Becoming",
+    "author": "Michelle Obama",
+    "pages": 448,
+    "releaseDate": "2018-11-13T00:00:00.000Z",
+    "genre": "Autobiography"
+  }
+]

@@ -1,0 +1,45 @@
+<h2 mat-dialog-title>Добавить новую книгу</h2>
+<mat-dialog-content>
+  <form [formGroup]="bookForm" class="book-form">
+    <mat-form-field appearance="fill">
+      <mat-label>Название</mat-label>
+      <input matInput formControlName="title" required>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Автор</mat-label>
+      <input matInput formControlName="author" required>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Количество страниц</mat-label>
+      <input matInput type="number" formControlName="pages" required>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Дата выпуска</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="releaseDate" readonly>
+      <mat-datepicker-toggle matSuffix [for]="picker">
+        <mat-icon>calendar_today</mat-icon>
+      </mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Жанр</mat-label>
+      <mat-select formControlName="genre" required>
+        @for (genre of genres; track genre){
+          <mat-option [value]="genre">
+            {{ genre }}
+          </mat-option>
+        }
+
+      </mat-select>
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button (click)="onCancel()">Отмена</button>
+  <button mat-raised-button color="primary" (click)="onSubmit()" [disabled]="!bookForm.valid">Добавить</button>
+</mat-dialog-actions>
+

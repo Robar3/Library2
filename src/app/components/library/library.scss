@@ -1,0 +1,47 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.container {
+  padding: 20px;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.search-row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.search-field {
+  flex: 1;
+  min-width: 200px;
+}
+
+.search-type-field {
+  width: 250px;
+}
+
+.book-item {
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-bottom: 1px solid #eee;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(145, 174, 167);
+  }
+}
+
+.author {
+  color: #666;
+  font-size: 0.8em;
+}
+.book-item {
+  .author {
+    margin-left: 20px;
+  }
+}
